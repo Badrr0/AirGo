@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirGo</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@700&display=swap" rel="stylesheet">
+    <!--endd-->
+    <link rel="stylesheet" href="home.css">
+    <!--script-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <!--end-->
+    <!--icon font location-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!--end-->
+    <!--font hearos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@700&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!--end-->
+</head>
+<body>
+    <header>
+    <nav>
+        <a class="logo">AirGo</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">offers</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <!--buttons-->
+         <div class="btns">
+<button>
+  <span class="span-mother">
+    <span>S</span>
+    <span>i</span>
+    <span>g</span>
+    <span>n</span>
+    <span>I</span>
+    <span>n</span>
+  </span>
+  <span class="span-mother2">
+    <span>S</span>
+    <span>i</span>
+    <span>g</span>
+    <span>n</span>
+    <span>I</span>
+    <span>n</span>
+  </span>
+</button>
+        <!--end-->
+        <!--button 2-->
+        <button class="btn">
+  <span class="span-mother">
+    <span>S</span>
+    <span>i</span>
+    <span>g</span>
+    <span>n</span>
+    <span>U</span>
+    <span>p</span>
+  </span>
+  <span class="span-mother2">
+    <span>S</span>
+    <span>i</span>
+    <span>g</span>
+    <span>n</span>
+    <span>U</span>
+    <span>p</span>
+  </span>
+</button>
+</div>
+        <!--endd-->
+    </nav>
+    </header>
+    <!--headers end-->
+    <div>
+    <video autoplay muted loop id="myvidio" >
+        <source src="image1/background.mp4">
+    </video>
+    <!--3d-->
+   <div class="airplane">
+      <model-viewer src="image1/Airplane3D.glb"
+        shadow-intensity="1"
+        camera-controls ar>
+      </model-viewer>
+      </div>
+    <!--end-->
+     <!--new container-->
+    <div class="container-box">
+
+    <div class="trip-box">
+  <input type="radio" id="round" name="trip" checked>
+  <label for="round">Round Trip</label>
+
+  <input type="radio" id="oneway" name="trip">
+  <label for="oneway">One Way</label>
+
+  <input type="radio" id="multi" name="trip">
+  <label for="multi">Multi-City</label>
+</div>
+<!--departire city-->
+<div class="containerchoises">
+  <h4>From</h4>
+  <i class="fa-solid fa-location-dot"></i>
+  
+    <label class="directioncity">
+      <input type="text" placeholder="Departure city">
+    </label>
+
+    <!--date-->
+
+    <h4>Departure</h4>
+  <i class="fa-regular fa-calendar"></i>
+  
+    <label class="Departure">
+      <input type="date">
+    </label>
+    <!--end-->
+  </div>
+  <!--destination city-->
+  <div class="containerchoises2">
+  <h4>To</h4>
+  <i class="fa-solid fa-location-dot"></i>
+  
+    <label class="destinations">
+      <input type="text" placeholder="Destination city">
+    </label>
+    <!--comebackday-->
+    <h4>Return</h4>
+  <i class="fa-regular fa-calendar"></i>
+  
+    <label class="Departure">
+      <input type="date">
+    </label>
+    <!--end-->
+  </div>
+
+
+</div>
+
+<!--end-->
+     <div class="texth1">
+        <h1>Your Journey Begins Here</h1>
+    </div>
+    <div class="text2">
+    <p>Book flights to destinations worldwide with the best prices<br> and service</p>
+    </div>
+    </div>
+    <!--section heros-->
+    <section class="hearos">
+      <div class="hearossec">
+        <h1>Popular Destinations</h1>
+        <h3>Explore our most popular routes with amazing deals</h3>
+      </div>
+
+      <div class="cardcitys">
+
+        <div class="imgcard">
+          <h1>New York</h1>
+          <h4>USA</h4>
+        <img src="image1/New york.jpg">
+        <div class="price">
+          <h3>Starting from</h3>
+          <h2>$299</h2>
+        </div>
+        
+          <button class="book">
+            <span>Book Now</span>
+          </button>
+
+        </div>
+        <!--card 2-->
+        <div class="imgcard2">
+          <h1>Paris</h1>
+          <h4>France</h4>
+        <img src="image1/Paris.jpg">
+
+        <div class="price2">
+          <h3>Starting from</h3>
+          <h2>$299</h2>
+        </div>
+
+        <button class="book2">
+            <span>Book Now</span>
+          </button>
+
+        </div>
+        <!--card 3-->
+        <div class="imgcard3">
+          <h1>London</h1>
+          <h4>UK</h4>
+        <img src="image1/London.jpg">
+
+        <div class="price3">
+          <h3>Starting from</h3>
+          <h2>$299</h2>
+        </div>
+
+        <button class="book3">
+            <span>Book Now</span>
+          </button>
+
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--endddd-->
+    <section class="footer">
+      <div class="footerchosing">
+        <h1>Why Choose AirGo?</h1>
+        <h3>We make your travel experience seamless and enjoyable</h3>
+      </div>
+
+      <div class="security">
+
+        
+        <div class="texticons">
+
+          <div class="conservive">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h4>Secure Booking</h4>
+          <h5>Your payment and<br> personal information <br>is always protected</h5>
+          </div>
+          
+        </div>
+        
+        <div class="texticons">
+
+          <div class="conservive">
+          <i class="fa-solid fa-clock"></i>
+          <h4>24/7 Service</h4>
+          <h5>Round-the-clock customer <br> support for all your travel<br> needs</h5>
+        </div>
+
+        </div>
+
+
+
+        <div class="texticons">
+
+          <div class="conservive">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <h4>Best Prices</h4>
+          <h5>Guaranteed lowest prices<br> with our price match<br> promise</h5>
+        </div>
+
+        </div>
+
+          <div class="texticons">
+            <div class="conservive">
+          <i class="fa-solid fa-headset"></i>
+          <h4> Expert Support </h4>
+          <h5>Our travel experts are <br>always ready to help you</h5>
+          </div>
+
+          </div>
+
+        </div>
+
+        </div>
+
+      </section>
+</body>
+</html>

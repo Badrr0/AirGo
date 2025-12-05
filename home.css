@@ -1,0 +1,574 @@
+body {
+    margin: 0;
+    font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+nav {
+    width: 100%;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+
+     font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: auto;
+}
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-links li a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ffffff;
+}
+.logo {
+    color: rgb(0, 62, 143);
+    margin-top: 8px;
+    font-size: x-large;
+    margin-left: 30px;
+}
+#myvidio{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+/*buttons*/
+.btns {
+    display: flex;
+    gap: 20px;
+    margin-right: 15px;
+    margin-top: 6px;
+}
+button {
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 95.02px;
+  height: 42.66px;
+  border: none;
+  background-color: #3653f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing:1.5px;
+}
+
+button .span-mother {
+  display: flex;
+  overflow: hidden;
+}
+
+button:hover .span-mother {
+  position: absolute;
+}
+
+button:hover .span-mother span {
+  transform: translateY(1.2em);
+}
+
+button .span-mother span:nth-child(1) {
+  transition: 0.2s;
+}
+
+button .span-mother span:nth-child(2) {
+  transition: 0.3s;
+}
+
+button .span-mother span:nth-child(3) {
+  transition: 0.4s;
+  }
+
+button .span-mother span:nth-child(4) {
+  transition: 0.5s;
+}
+
+button .span-mother span:nth-child(5) {
+  transition: 0.6s;
+}
+
+button .span-mother span:nth-child(6) {
+  transition: 0.7s;
+}
+
+button .span-mother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+button .span-mother2 span {
+  transform: translateY(-1.2em);
+}
+
+button:hover .span-mother2 span {
+  transform: translateY(0);
+}
+
+button .span-mother2 span {
+  transition: 0.2s;
+}
+
+button .span-mother2 span:nth-child(2) {
+  transition: 0.3s;
+}
+
+button .span-mother2 span:nth-child(3) {
+    transition: 0.4s;
+}
+.texth1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 25px;
+    top:100px;
+    left: 50px;
+    color: rgb(255, 255, 255);
+    z-index: 1; 
+    text-shadow: 1px 1px 1px black;
+}
+.texth1:hover{
+    color: rgb(255, 255, 255);
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+}
+.text2 p {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 260px;
+    left: 50px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    text-shadow: 1px 1px 1px black; 
+}
+.text2:hover{
+    color: rgb(255, 255, 255);
+}
+.airplane {
+  display: flex;
+  margin-left: 900px;
+    position: absolute;
+    top: 170px;    /* change to your liking */
+    left: 50px;    /* change to your liking */
+    width: 400px;  /* size of the 3D model */
+    height: 300px;
+    z-index: 10;   /* ABOVE the video */
+}
+model-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+.trip-box {
+  display:flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+.container-box .trip-box  {
+  margin-bottom: 230px;
+  margin-left: 20px;
+}
+.container-box {
+  display: flex;
+  align-items: center;
+  position:absolute;
+  height: 250px;
+  width: 700px;
+  top: 450px;
+  left: 50px;
+  background-color: #f2f2f2; /* change color if you want */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.trip-box input {
+  display: none;
+}
+
+.trip-box label {
+  padding: 8px 14px;
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+}
+
+.trip-box label:last-of-type {
+  border-right: none;
+}
+
+.trip-box input:checked + label {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+.containerchoises {
+  position: absolute;
+  left: 16px;
+}
+.containerchoises i {
+  font-size: 18px;
+  color: #1900ff;
+}
+.containerchoises h4 {
+  display: flex;
+  position: relative;
+  margin-left: 15px;
+  width: fit-content;
+}
+.containerchoises2 i {
+  font-size: 18px;
+  color: #1900ff;
+}
+/*section hearos*/
+.hearos{
+  height:70vh;
+  width: 100%;
+}
+.hearossec h1 {
+    font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+}
+
+  .hearossec h1 {
+    font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.hearossec h3 {
+    font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  color: darkgrey;
+}
+.cardcitys {
+  display: flex;
+  gap: 40px;
+}
+.imgcard img  {
+  height: 300px;
+  width: fit-content;
+  margin-left: 30px;
+}
+.imgcard:hover{
+  transform: scale(1.05);
+}
+.imgcard h1 {
+  color: #ffffff;
+  position: absolute;
+  left: 50px;
+  margin-top: 220px;
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.imgcard h4 {
+  color: #ffffff;
+  position: absolute;
+  left: 50px;
+  margin-top: 260px;
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+/*img 2 */
+.imgcard2 {
+  position: relative;
+  overflow: hidden;
+  gap: 40px;
+  cursor: pointer;
+}
+.imgcard2 img  {
+  height: 300px;
+  width: fit-content;
+  margin-left: 30px;
+}
+.imgcard2 h1 {
+  color: #ffffff;
+
+  left: 570px;
+  margin-top: 220px;
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  z-index: 2;
+}
+.imgcard2 h4 {
+  color: #ffffff;
+
+  left: 570px;
+  margin-top: 260px;
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/*img card 3 */
+.imgcard3 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.imgcard3 img  {
+  height: 300px;
+  width: fit-content;
+  margin-left: 30px;
+}
+.imgcard3 h1 {
+  color: #ffffff;
+
+  left: 850px;
+  margin-top: 220px;
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.imgcard3 h4 {
+  
+  color: #ffffff;
+  left: 850px;
+  margin-top: 260px;
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.imgcard h1, .imgcard h4,
+.imgcard2 h1, .imgcard2 h4,
+.imgcard3 h1, .imgcard3 h4 {
+  position: absolute;
+  left: 37px;                 /* SAME for all cards */
+  color: white;
+  z-index: 2;
+  text-shadow: 1px 1px 3px black;
+  font-family: "Vend Sans", sans-serif;
+}
+.imgcard:hover,
+.imgcard2:hover,
+.imgcard3:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.price{
+  margin-left: 20px;
+}
+.price h3 {
+  margin-left: 0;
+}
+.price2 h2, h3{
+  margin-left: 20px;
+}
+.price2 h3 {
+  margin-left: 17px;
+}
+.price3 h2, h3 {
+  margin-left: 30px;
+}
+.price h2,h3{
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.price h2 {
+  color: red;
+}
+.price2 h2, .price3 h2{
+  color: red;
+}
+.imgcard .book {
+  margin-left: 290px;
+  margin-bottom: 20px;
+}
+.imgcard3 .book3 {
+  margin-left: 320px;
+  margin-bottom: 20px;
+}
+.imgcard2 .book2 {
+  margin-left:100px;
+  margin-bottom: 20px;
+}
+.book, .book2, .book3 {
+  display: flex;
+  position: relative;
+ border-radius: 4px;
+ background-color: #3d405b;
+ border: none;
+ color: #FFFFFF;
+ font-size: 17px;
+ padding: 16px;
+ width: fit-content;
+ transition: all 0.5s;
+ cursor: pointer;
+}
+
+.book span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+.book span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+.book:hover span {
+ padding-right: 15px;
+}
+
+.book:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+/*book2*/
+.book2 span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+.book2 span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+.book2:hover span {
+ padding-right: 15px;
+}
+
+.book2:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+
+
+/*book 3 */
+.book3 span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+.book3 span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+.book3:hover span {
+ padding-right: 15px;
+}
+
+.book3:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+/* footer section */
+.footer{
+  height:70vh;
+  width: 100%;
+}
+.footerchosing h1 {
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  margin-top: 170px;
+}
+.footerchosing h3 {
+ font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  color: darkgrey;
+}
+.security {
+  display: flex;
+  gap: 150px;
+}
+.sectionwhy {
+  height:70vh;
+  width: fit-content;
+}
+.texticons {
+   font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+.conservive h4 {
+  margin-top: 0;
+}
+.conservive i {
+  color: red;
+  font-size: 25px;
+  margin-left: 30px;
+}
+.conservive h5 {
+   font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: darkgrey;
+}
